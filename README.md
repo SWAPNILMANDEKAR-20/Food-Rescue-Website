@@ -48,7 +48,7 @@ How to Use
    cd surplus-food-locator-app
    
 2. Set up Firebase & Google Maps API:
-   - Replace `"YOUR_GOOGLE_MAPS_API_KEY"` in the script with your own key
+   - Replace apiKey: "AIzaSyA_pGzSJ9XzSm5snZXpwsUElfsfkyPyStA", in the script with your own key
    - Add your Firebase project credentials in `app.js`
 
 3. Run the app:
