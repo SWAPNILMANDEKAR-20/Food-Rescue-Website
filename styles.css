@@ -1,0 +1,297 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    height: 60vh;
+    width: 100%;
+}
+
+#map {
+    height: 100%;
+}
+
+.form-container,
+.auth-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+.form-card h2 {
+    margin-top: 0;
+}
+
+.form-card input,
+.auth-container input,
+.form-card select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: black;
+}
+
+.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.info-section {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info-section h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* Find Food Feature */
+.find-food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+#findFoodForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-top: 10px;
+    min-width: 250px;
+    z-index: 1001;
+}
+#findFoodForm label {
+    font-weight: 500;
+    color: #333;
+}
+#findFoodForm select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Auth Options Modal */
+#authOptions {
+    display: none;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    min-width: 260px;
+    text-align: center;
+    z-index: 1002;
+}
+#authOptions h2 {
+    margin-bottom: 20px;
+}
+#authOptions .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Login/Signup Modal Enhancements */
+#loginForm, #signupForm {
+    min-width: 260px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#loginForm h2, #signupForm h2 {
+    margin-bottom: 20px;
+}
+#loginForm .form-buttons, #signupForm .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Modal Overlay */
+body.modal-open::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+/* Button Hover Effects */
+.btn:hover, .fab:hover {
+    filter: brightness(0.95);
+    box-shadow: 0 6px 16px rgba(76,175,80,0.18);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-container, .auth-container, #findFoodForm, #authOptions, #loginForm, #signupForm {
+        min-width: 90vw;
+        padding: 10px;
+    }
+    .info-section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* Search Food Feature */
+.search-food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#searchFoodForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-top: 10px;
+    min-width: 250px;
+    z-index: 1001;
+}
+
+.search-form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-form-card h3 {
+    margin: 0;
+    color: #4CAF50;
+}
+
+#searchFoodType {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Food Info Window Styles */
+.food-info-window {
+    padding: 10px;
+}
+
+.food-info-window h4 {
+    margin: 0 0 10px 0;
+    color: #4CAF50;
+}
+
+.food-info-window p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #searchFoodForm {
+        min-width: 90vw;
+        padding: 15px;
+    }
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Login/Signup Forms */
+.auth-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    z-index: 1002;
+    min-width: 300px;
+    display: none;
+}
+
+.auth-container h2 {
+    margin-top: 0;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-container .form-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Welcome Message */
+.welcome-message {
+    text-align: center;
+    margin: 20px 0;
+    color: #4CAF50;
+    font-weight: 500;
+}
