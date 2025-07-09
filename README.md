@@ -1,58 +1,67 @@
- Surplus Food Locator App
-A web-based platform to donate and locate surplus food in real-time using geolocation, Firebase, and Google Maps API.
-This app helps bridge the gap between food donors and people in need, aiming to reduce food waste and fight hunger.
+Surplus Food Locator App
+
+Overview  
+The **Surplus Food Locator App** is a web-based platform designed to connect individuals or organizations with **surplus food** to nearby **shelters or people in need**. It promotes food redistribution, reduces waste, and ensures real-time visibility of available food via **Google Maps integration** and **Firebase backend**.
+
+
 
 Features
-User Authentication (Register/Login with Firebase Auth)
 
-Google Maps Integration to view food donation locations
+- Login/Register: Secure authentication using Firebase Auth  
+- Food Submission: Add food items with type, expiry time, and live location  
+- Live Map View: See all available food locations instantly on an interactive Google Map  
+- QR Code Generation: Each submission gets a unique QR for pickup verification  
+- Real-Time Database: All entries update automatically without page refresh  
+- Mobile Friendly: Responsive UI with clean navigation  
 
-Add Surplus Food with expiry time and current location
 
-Real-Time Updates using Firebase Realtime Database
 
-QR Code Generation for donation tracking and verification
+Technologies Used
 
-Responsive UI for desktop and mobile
+Backend:
+- Firebase Authentication – User login & registration  
+- Firebase Realtime Database – Storage for food location data  
+- QRCode.js – Generate unique QR codes for each food entry  
 
-How It Works
-User logs in or registers.
+Frontend:
+- HTML, CSS, JavaScript – Core structure and interactivity  
+- Google Maps API – Geolocation and map visualization  
+- Font Awesome & Google Font – UI styling and icons  
 
-Adds a food item using a simple form with type and expiry time.
 
-App fetches the user's location and stores the donation in Firebase.
+Project Structure
 
-Food markers appear on the map for all users in real time.
+```
+├── index.html              # Main UI
+├── styles.css              # Stylesheet for UI
+├── app.js                  # Logic for Firebase + Google Maps + QR
+└── assets/ (optional)      # Images, icons, screenshots
+```
 
-A QR code is generated for each donation to help with secure pickup.
+---
 
-Tech Stack
-Frontend: HTML, CSS, JavaScript
+How to Use
 
-Backend: Firebase (Auth + Realtime Database)
+1. Clone the repository:
+   
+   git clone https://github.com/your-username/surplus-food-locator-app
+   cd surplus-food-locator-app
+   
+2. Set up Firebase & Google Maps API:
+   - Replace `"YOUR_GOOGLE_MAPS_API_KEY"` in the script with your own key
+   - Add your Firebase project credentials in `app.js`
 
-Maps: Google Maps JavaScript API
+3. Run the app:
+   - Simply open `index.html` in your browser
+   - Login/Register, add food, and view donations on the map
 
-QR Code: qrcode.min.js library
 
-🔧 Setup Instructions
-Clone the repository:
+Use Case
+A restaurant has leftover cooked meals. The manager logs in, selects **"Cooked Meals"**, and submits the donation.  
+The food location is shown on the map, and nearby NGOs or individuals can view and arrange pickup using the **generated QR code**.
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/food-rescue-app.git
-cd food-rescue-app
-Replace YOUR_GOOGLE_MAPS_API_KEY in the HTML file with your actual API key.
+---
 
-Add your Firebase config to the script (firebase.initializeApp(...)).
+## 🧪 License
 
-Run the app by opening index.html in your browser.
-
-Screenshots
-
-![WhatsApp Image 2025-07-09 at 18 15 56_59af2d84](https://github.com/user-attachments/assets/182830b8-f86c-41a6-9ef8-412606d62054)
-
-License
-This project is intended for educational and research purposes only. Usage of third-party APIs or models is subject to their individual licenses.
-
+This project is developed for academic, research, and social good purposes. APIs and third-party services are subject to their own licenses.
