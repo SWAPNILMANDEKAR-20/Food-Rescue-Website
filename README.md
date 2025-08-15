@@ -1,5 +1,13 @@
 Surplus Food Locator App
 
+
+
+
+
+https://github.com/user-attachments/assets/c46e13b9-bf7f-4275-b417-a6f932522a90
+
+
+
 Overview  
 The **Surplus Food Locator App** is a web-based platform designed to connect individuals or organizations with **surplus food** to nearby **shelters or people in need**. It promotes food redistribution, reduces waste, and ensures real-time visibility of available food via **Google Maps integration** and **Firebase backend**.
 
