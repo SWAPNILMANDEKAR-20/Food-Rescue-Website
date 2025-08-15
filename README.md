@@ -1,15 +1,16 @@
-Surplus Food Locator App
+Surplus Food Locator
 
 
 
 
 
-https://github.com/user-attachments/assets/c46e13b9-bf7f-4275-b417-a6f932522a90
+
+https://github.com/user-attachments/assets/19c1a892-2b34-4282-a34d-b0dc562840e9
 
 
 
 Overview  
-The **Surplus Food Locator App** is a web-based platform designed to connect individuals or organizations with **surplus food** to nearby **shelters or people in need**. It promotes food redistribution, reduces waste, and ensures real-time visibility of available food via **Google Maps integration** and **Firebase backend**.
+The **Surplus Food Locator ** is a web-based platform designed to connect individuals or organizations with **surplus food** to nearby **shelters or people in need**. It promotes food redistribution, reduces waste, and ensures real-time visibility of available food via **Google Maps integration** and **Firebase backend**.
 
 
 
@@ -52,8 +53,8 @@ How to Use
 
 1. Clone the repository:
    
-   git clone https://github.com/your-username/surplus-food-locator-app
-   cd surplus-food-locator-app
+   git clone https://github.com/your-username/surplus-food-locator
+   cd surplus-food-locator
    
 2. Set up Firebase & Google Maps API:
    - Replace apiKey: "AIzaSyA_pGzSJ9XzSm5snZXpwsUElfsfkyPyStA", in the script with your own key
